@@ -29,7 +29,7 @@ function Busqueda({ searchQuery, setSearchQuery, handleSearch, searchResults, bo
                 </form>
                 {boxArtUrl && <img src={boxArtUrl} className="mt-10 w-80" alt="Imagen del juego" />}
 
-                <div className="grid grid-cols-5 gap-4 w-full max-w-6xl h-full">
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 w-4/5 max-w-100 h-full">
                     {filteredResults.map(game => (
                         <div key={game.id} className="text-center mt-10 text-xl text-bold text-white hover:shadow-lg transform transition-transform duration-300 hover:scale-105 hover:text-customTextHover">
                             <h2>{game.name}</h2>
