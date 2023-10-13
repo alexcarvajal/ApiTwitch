@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 const Top10 = ({ data, title }) => {
     return (
-        <>
+        <div className="flex flex-col min-h-screen bg-custom-Bg">
             <Header title="Top 10 de Stream en Twitch" />
             <div className="flex items-center bg-custom-Bg justify-center h-[20]">
                 <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
@@ -16,7 +16,7 @@ const Top10 = ({ data, title }) => {
                     ))}
                 </ul>
             </div>
-        </>
+        </div>
     )
 }
 
